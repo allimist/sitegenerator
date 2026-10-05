@@ -1,0 +1,17 @@
+{
+  "name": "sitegenerator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local simple site generator with JSON-driven pages and admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed-images": "node scripts/seed-images.js"
+  },
+  "dependencies": {
+    "archiver": "^8.0.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "multer": "^2.4.0"
+  }
+}

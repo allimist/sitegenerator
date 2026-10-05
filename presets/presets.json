@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "restaurant",
+    "label": "Restaurant",
+    "name": "Luigi's Trattoria",
+    "domain": "luigis-trattoria.com",
+    "tagline": "Authentic Italian cooking since 1987",
+    "imageQuery": "italian restaurant food",
+    "email": "hello@luigis-trattoria.com",
+    "phone": "+1 (555) 010-2000",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Luigi's Trattoria",
+            "subheading": "Authentic Italian cooking since 1987",
+            "image": "auto",
+            "buttonText": "Book a table tonight",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Handmade Pasta",
+                "text": "Rolled fresh every morning in our kitchen."
+              },
+              {
+                "title": "Wood-Fired Pizza",
+                "text": "Baked at 450°C in our brick oven."
+              },
+              {
+                "title": "Local Wines",
+                "text": "A curated cellar of regional favourites."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "A family kitchen in the heart of the city, serving recipes passed down for three generations.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Book a table tonight",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Authentic Italian cooking since 1987",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "A family kitchen in the heart of the city, serving recipes passed down for three generations.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "menu",
+        "title": "Menu",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Menu",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Antipasti",
+                "text": "Bruschetta, burrata and cured meats to share.",
+                "image": "auto"
+              },
+              {
+                "title": "Primi",
+                "text": "Fresh pasta with seasonal sauces.",
+                "image": "auto"
+              },
+              {
+                "title": "Secondi",
+                "text": "Grilled fish, slow-cooked meats and more.",
+                "image": "auto"
+              },
+              {
+                "title": "Dolci",
+                "text": "Tiramisu, panna cotta and gelato.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Book a table tonight",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2000",
+            "email": "hello@luigis-trattoria.com",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coffee",
+    "label": "Coffee Shop",
+    "name": "Bean & Bloom",
+    "domain": "beanandbloom.coffee",
+    "tagline": "Small-batch roasts, big-hearted mornings",
+    "imageQuery": "coffee shop latte",
+    "email": "hello@beanandbloom.coffee",
+    "phone": "+1 (555) 010-2111",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Bean & Bloom",
+            "subheading": "Small-batch roasts, big-hearted mornings",
+            "image": "auto",
+            "buttonText": "Come say hi",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Roasted In-House",
+                "text": "Beans roasted weekly in small batches."
+              },
+              {
+                "title": "Fresh Pastries",
+                "text": "Baked every morning by our pastry team."
+              },
+              {
+                "title": "Cozy Space",
+                "text": "Free Wi-Fi, warm light and comfy chairs."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "We started with one espresso machine and a love for good mornings. Today we roast our own beans and still greet every guest by name.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Come say hi",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Small-batch roasts, big-hearted mornings",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "We started with one espresso machine and a love for good mornings. Today we roast our own beans and still greet every guest by name.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "menu",
+        "title": "Menu",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Menu",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Espresso Bar",
+                "text": "Espresso, cortado, flat white and more.",
+                "image": "auto"
+              },
+              {
+                "title": "Filter & Pour-Over",
+                "text": "Single origins brewed by hand.",
+                "image": "auto"
+              },
+              {
+                "title": "Cold Drinks",
+                "text": "Cold brew, iced lattes and lemonades.",
+                "image": "auto"
+              },
+              {
+                "title": "Bakery",
+                "text": "Croissants, cookies and banana bread.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Come say hi",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2111",
+            "email": "hello@beanandbloom.coffee",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gym",
+    "label": "Fitness Gym",
+    "name": "IronPulse Fitness",
+    "domain": "ironpulse.fit",
+    "tagline": "Stronger every single day",
+    "imageQuery": "gym fitness workout",
+    "email": "hello@ironpulse.fit",
+    "phone": "+1 (555) 010-2222",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "IronPulse Fitness",
+            "subheading": "Stronger every single day",
+            "image": "auto",
+            "buttonText": "Claim your free trial week",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Open 24/7",
+                "text": "Train on your schedule, any hour."
+              },
+              {
+                "title": "Expert Coaches",
+                "text": "Certified trainers ready to help."
+              },
+              {
+                "title": "Modern Equipment",
+                "text": "Free weights, machines and turf."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "IronPulse was built by coaches who believe fitness should feel welcoming, motivating and fun for everyone.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Claim your free trial week",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Stronger every single day",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "IronPulse was built by coaches who believe fitness should feel welcoming, motivating and fun for everyone.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "classes",
+        "title": "Classes",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Classes",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "HIIT",
+                "text": "High-intensity sessions to burn and build.",
+                "image": "auto"
+              },
+              {
+                "title": "Strength",
+                "text": "Barbell programs for every level.",
+                "image": "auto"
+              },
+              {
+                "title": "Spin",
+                "text": "Music-driven indoor cycling.",
+                "image": "auto"
+              },
+              {
+                "title": "Personal Training",
+                "text": "One-on-one coaching tailored to you.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Claim your free trial week",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2222",
+            "email": "hello@ironpulse.fit",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dental",
+    "label": "Dental Clinic",
+    "name": "BrightSmile Dental",
+    "domain": "brightsmile-dental.com",
+    "tagline": "Gentle care for healthy smiles",
+    "imageQuery": "dentist clinic smile",
+    "email": "hello@brightsmile-dental.com",
+    "phone": "+1 (555) 010-2333",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "BrightSmile Dental",
+            "subheading": "Gentle care for healthy smiles",
+            "image": "auto",
+            "buttonText": "Book your check-up",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Gentle Care",
+                "text": "Comfort-first treatment for nervous patients."
+              },
+              {
+                "title": "Modern Tech",
+                "text": "Digital X-rays and same-day crowns."
+              },
+              {
+                "title": "Family Friendly",
+                "text": "Care for kids, parents and grandparents."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Our team of dentists and hygienists has cared for local families for over 15 years.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Book your check-up",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Gentle care for healthy smiles",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Our team of dentists and hygienists has cared for local families for over 15 years.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "services",
+        "title": "Services",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Services",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Check-ups & Cleaning",
+                "text": "Routine exams to keep your smile healthy.",
+                "image": "auto"
+              },
+              {
+                "title": "Whitening",
+                "text": "Professional whitening for a brighter smile.",
+                "image": "auto"
+              },
+              {
+                "title": "Implants",
+                "text": "Long-lasting replacements for missing teeth.",
+                "image": "auto"
+              },
+              {
+                "title": "Orthodontics",
+                "text": "Clear aligners and braces for all ages.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Book your check-up",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2333",
+            "email": "hello@brightsmile-dental.com",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law",
+    "label": "Law Firm",
+    "name": "Harper & Cole Law",
+    "domain": "harpercole-law.com",
+    "tagline": "Clear advice. Strong representation.",
+    "imageQuery": "law office lawyer",
+    "email": "hello@harpercole-law.com",
+    "phone": "+1 (555) 010-2444",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Harper & Cole Law",
+            "subheading": "Clear advice. Strong representation.",
+            "image": "auto",
+            "buttonText": "Schedule a free consultation",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "30+ Years",
+                "text": "Decades of combined courtroom experience."
+              },
+              {
+                "title": "Client Focused",
+                "text": "Direct access to your attorney."
+              },
+              {
+                "title": "Free Consultation",
+                "text": "Understand your options at no cost."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Harper & Cole is an independent firm that pairs big-firm expertise with personal attention.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Schedule a free consultation",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Clear advice. Strong representation.",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Harper & Cole is an independent firm that pairs big-firm expertise with personal attention.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "practice-areas",
+        "title": "Practice Areas",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Practice Areas",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Family Law",
+                "text": "Divorce, custody and mediation.",
+                "image": "auto"
+              },
+              {
+                "title": "Business Law",
+                "text": "Contracts, formation and disputes.",
+                "image": "auto"
+              },
+              {
+                "title": "Real Estate",
+                "text": "Closings, leases and title issues.",
+                "image": "auto"
+              },
+              {
+                "title": "Estate Planning",
+                "text": "Wills, trusts and probate.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Schedule a free consultation",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2444",
+            "email": "hello@harpercole-law.com",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "realestate",
+    "label": "Real Estate",
+    "name": "Keystone Realty",
+    "domain": "keystone-realty.com",
+    "tagline": "Find the place you belong",
+    "imageQuery": "modern house interior",
+    "email": "hello@keystone-realty.com",
+    "phone": "+1 (555) 010-2555",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Keystone Realty",
+            "subheading": "Find the place you belong",
+            "image": "auto",
+            "buttonText": "Get a free home valuation",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Local Experts",
+                "text": "Agents who know every neighborhood."
+              },
+              {
+                "title": "Fair Pricing",
+                "text": "Data-driven valuations you can trust."
+              },
+              {
+                "title": "Full Support",
+                "text": "From first viewing to final signature."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Keystone Realty helps buyers, sellers and renters make confident moves with honest advice.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Get a free home valuation",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Find the place you belong",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Keystone Realty helps buyers, sellers and renters make confident moves with honest advice.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "listings",
+        "title": "Listings",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Listings",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Family Homes",
+                "text": "Spacious houses near great schools.",
+                "image": "auto"
+              },
+              {
+                "title": "City Apartments",
+                "text": "Modern living close to everything.",
+                "image": "auto"
+              },
+              {
+                "title": "Luxury Estates",
+                "text": "Exceptional properties with character.",
+                "image": "auto"
+              },
+              {
+                "title": "Commercial",
+                "text": "Offices and retail spaces.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Get a free home valuation",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2555",
+            "email": "hello@keystone-realty.com",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "photography",
+    "label": "Photography Portfolio",
+    "name": "Mira Lens Studio",
+    "domain": "miralens.studio",
+    "tagline": "Moments, beautifully kept",
+    "imageQuery": "photography portrait landscape",
+    "email": "hello@miralens.studio",
+    "phone": "+1 (555) 010-2666",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Mira Lens Studio",
+            "subheading": "Moments, beautifully kept",
+            "image": "auto",
+            "buttonText": "Check my availability",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Natural Light",
+                "text": "Honest, warm and timeless images."
+              },
+              {
+                "title": "Fast Delivery",
+                "text": "Edited galleries within two weeks."
+              },
+              {
+                "title": "Print Ready",
+                "text": "High-resolution files and prints."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "I am a photographer who loves quiet details, golden light and real emotion.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Check my availability",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Moments, beautifully kept",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "I am a photographer who loves quiet details, golden light and real emotion.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "services",
+        "title": "Services",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Services",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Weddings",
+                "text": "Full-day coverage of your story.",
+                "image": "auto"
+              },
+              {
+                "title": "Portraits",
+                "text": "Individuals, couples and families.",
+                "image": "auto"
+              },
+              {
+                "title": "Brands",
+                "text": "Product and lifestyle imagery.",
+                "image": "auto"
+              },
+              {
+                "title": "Events",
+                "text": "Parties, launches and conferences.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Check my availability",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2666",
+            "email": "hello@miralens.studio",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yoga",
+    "label": "Yoga Studio",
+    "name": "Lotus Flow Yoga",
+    "domain": "lotusflow.yoga",
+    "tagline": "Breathe, move, restore",
+    "imageQuery": "yoga meditation studio",
+    "email": "hello@lotusflow.yoga",
+    "phone": "+1 (555) 010-2777",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Lotus Flow Yoga",
+            "subheading": "Breathe, move, restore",
+            "image": "auto",
+            "buttonText": "Your first class is free",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "All Levels",
+                "text": "Beginner-friendly classes every day."
+              },
+              {
+                "title": "Small Groups",
+                "text": "Personal attention in every class."
+              },
+              {
+                "title": "Calm Space",
+                "text": "A bright, peaceful studio."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Lotus Flow is a community studio where everyone is welcome on the mat, whatever their age or experience.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Your first class is free",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Breathe, move, restore",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Lotus Flow is a community studio where everyone is welcome on the mat, whatever their age or experience.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "classes",
+        "title": "Classes",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Classes",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Vinyasa Flow",
+                "text": "Dynamic sequences linked with breath.",
+                "image": "auto"
+              },
+              {
+                "title": "Yin Yoga",
+                "text": "Slow, deep stretches to release tension.",
+                "image": "auto"
+              },
+              {
+                "title": "Meditation",
+                "text": "Guided practice for a quiet mind.",
+                "image": "auto"
+              },
+              {
+                "title": "Prenatal",
+                "text": "Gentle yoga for expecting mothers.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Your first class is free",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2777",
+            "email": "hello@lotusflow.yoga",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "startup",
+    "label": "Tech Startup",
+    "name": "Nimbus Labs",
+    "domain": "nimbuslabs.io",
+    "tagline": "Ship faster with smarter cloud tools",
+    "imageQuery": "technology startup office",
+    "email": "hello@nimbuslabs.io",
+    "phone": "+1 (555) 010-2888",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Nimbus Labs",
+            "subheading": "Ship faster with smarter cloud tools",
+            "image": "auto",
+            "buttonText": "Start your free trial",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Lightning Fast",
+                "text": "Deploy in seconds, not hours."
+              },
+              {
+                "title": "Secure by Default",
+                "text": "Encryption and SSO built in."
+              },
+              {
+                "title": "Scales With You",
+                "text": "From side project to enterprise."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Nimbus Labs is a small team of engineers building the developer tools we always wanted.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Start your free trial",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Ship faster with smarter cloud tools",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Nimbus Labs is a small team of engineers building the developer tools we always wanted.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "product",
+        "title": "Product",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Product",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Deploy",
+                "text": "One-click deploys from your repo.",
+                "image": "auto"
+              },
+              {
+                "title": "Monitor",
+                "text": "Real-time metrics and alerts.",
+                "image": "auto"
+              },
+              {
+                "title": "Collaborate",
+                "text": "Shared environments for your team.",
+                "image": "auto"
+              },
+              {
+                "title": "Integrate",
+                "text": "Works with the tools you already use.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Start your free trial",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2888",
+            "email": "hello@nimbuslabs.io",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "travel",
+    "label": "Travel Agency",
+    "name": "Wanderway Travel",
+    "domain": "wanderway.travel",
+    "tagline": "Journeys crafted around you",
+    "imageQuery": "travel beach mountains",
+    "email": "hello@wanderway.travel",
+    "phone": "+1 (555) 010-2999",
+    "address": "123 Main Street, Springfield",
+    "pages": [
+      {
+        "slug": "home",
+        "title": "Home",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Wanderway Travel",
+            "subheading": "Journeys crafted around you",
+            "image": "auto",
+            "buttonText": "Plan my next trip",
+            "buttonLink": "contact"
+          },
+          {
+            "type": "features",
+            "heading": "Why choose us",
+            "items": [
+              {
+                "title": "Tailor-Made Trips",
+                "text": "Every itinerary designed for you."
+              },
+              {
+                "title": "24/7 Support",
+                "text": "Help wherever you are in the world."
+              },
+              {
+                "title": "Best Value",
+                "text": "Trusted partners and fair prices."
+              }
+            ]
+          },
+          {
+            "type": "imageText",
+            "heading": "Our story",
+            "body": "Wanderway was founded by lifelong travellers who want to share the world’s best experiences with you.",
+            "image": "auto"
+          },
+          {
+            "type": "cta",
+            "heading": "Plan my next trip",
+            "text": "We would love to hear from you.",
+            "buttonText": "Contact us",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "about",
+        "title": "About",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "About us",
+            "subheading": "Journeys crafted around you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "imageText",
+            "heading": "Who we are",
+            "body": "Wanderway was founded by lifelong travellers who want to share the world’s best experiences with you.",
+            "image": "auto"
+          },
+          {
+            "type": "text",
+            "heading": "Our values",
+            "body": "Quality, honesty and care guide everything we do. We take the time to listen and we are proud of the work we deliver."
+          }
+        ]
+      },
+      {
+        "slug": "destinations",
+        "title": "Destinations",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Destinations",
+            "subheading": "Everything we offer",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "features",
+            "heading": "What we offer",
+            "items": [
+              {
+                "title": "Beach Escapes",
+                "text": "Sun, sand and crystal-clear water.",
+                "image": "auto"
+              },
+              {
+                "title": "City Breaks",
+                "text": "Culture, food and nightlife.",
+                "image": "auto"
+              },
+              {
+                "title": "Mountain Adventures",
+                "text": "Hiking, skiing and fresh air.",
+                "image": "auto"
+              },
+              {
+                "title": "Safari",
+                "text": "Unforgettable wildlife encounters.",
+                "image": "auto"
+              }
+            ]
+          },
+          {
+            "type": "cta",
+            "heading": "Plan my next trip",
+            "text": "Questions? We are happy to help.",
+            "buttonText": "Get in touch",
+            "buttonLink": "contact"
+          }
+        ]
+      },
+      {
+        "slug": "gallery",
+        "title": "Gallery",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Gallery",
+            "subheading": "A look inside",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "gallery",
+            "heading": "",
+            "images": [
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto",
+              "auto"
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "contact",
+        "title": "Contact",
+        "blocks": [
+          {
+            "type": "hero",
+            "heading": "Contact",
+            "subheading": "We would love to hear from you",
+            "image": "auto",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "contact",
+            "heading": "Get in touch",
+            "address": "123 Main Street, Springfield",
+            "phone": "+1 (555) 010-2999",
+            "email": "hello@wanderway.travel",
+            "hours": "Mon–Fri 9:00–18:00"
+          }
+        ]
+      }
+    ]
+  }
+]
