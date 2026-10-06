@@ -1,16 +1,19 @@
 <!doctype html>
-<html lang="{{LANG}}">
+<html lang="{{LANG}}" style="{{CSS_VARS}}" data-rev="{{REV}}"{{STATIC}}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{TITLE}}</title>
-  <meta name="description" content="{{DESCRIPTION}}">
+{{BASE}}  <title>{{TITLE}}</title>
+{{META}}  <link rel="icon" href="{{ROOT}}/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="fonts" rel="stylesheet" href="{{FONTS}}">
   <link rel="stylesheet" href="{{ROOT}}/assets/site.css">
 </head>
-<body data-root="{{ROOT}}" class="is-loading">
-  <div id="app"></div>
-  <noscript><p style="padding:2rem;text-align:center">Please enable JavaScript to view this site.</p></noscript>
-  <!--INLINE_DATA-->
+<body data-root="{{ROOT}}" class="{{BODY_CLASS}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app">{{BODY}}</div>
+  <script src="{{ROOT}}/assets/render.js"></script>
   <script src="{{ROOT}}/assets/site.js"></script>
 </body>
 </html>

@@ -239,24 +239,54 @@ async function renderCreate() {
 
 // ---------- editor ----------
 
-const state = { site: null, slug: null, page: null, dirty: false, images: [] };
+const state = { site: null, slug: null, page: null, dirty: false, open: new Set([0, 1]) };
+
+// Field: [key, label, kind?, options?]. Kinds: text (default), textarea, image,
+// link, checkbox, images (gallery), list (repeatable items with their own fields).
+const list = (label, fields, blank) => ({ label, fields, blank });
 
 const BLOCKS = {
   hero: { label: 'Hero banner', fields: [['heading', 'Heading'], ['subheading', 'Subheading', 'textarea'], ['image', 'Background image', 'image'], ['buttonText', 'Button text'], ['buttonLink', 'Button link', 'link']] },
   text: { label: 'Text', fields: [['heading', 'Heading'], ['body', 'Text', 'textarea']] },
   imageText: { label: 'Image + text', fields: [['heading', 'Heading'], ['body', 'Text', 'textarea'], ['image', 'Image', 'image'], ['buttonText', 'Button text'], ['buttonLink', 'Button link', 'link']] },
-  features: { label: 'Feature cards', fields: [['heading', 'Heading'], ['items', 'Cards', 'items']] },
+  features: {
+    label: 'Feature cards',
+    fields: [['heading', 'Heading'], ['items', 'Cards', 'list', list('Card', [['title', 'Title'], ['text', 'Text', 'textarea'], ['image', 'Image (optional)', 'image']], { title: 'Card title', text: 'Short description.', image: '', imageAlt: '' })]],
+  },
   gallery: { label: 'Gallery', fields: [['heading', 'Heading'], ['images', 'Images', 'images']] },
+  testimonials: {
+    label: 'Testimonials',
+    fields: [['heading', 'Heading'], ['items', 'Testimonials', 'list', list('Testimonial', [['quote', 'Quote', 'textarea'], ['name', 'Name'], ['role', 'Role / context'], ['image', 'Photo (optional)', 'image']], { quote: 'They did a fantastic job.', name: 'Happy customer', role: '', image: '' })]],
+  },
+  pricing: {
+    label: 'Pricing table',
+    fields: [['heading', 'Heading'], ['plans', 'Plans', 'list', list('Plan', [['name', 'Plan name'], ['price', 'Price'], ['period', 'Period (e.g. /month)'], ['features', 'Features (one per line)', 'textarea'], ['buttonText', 'Button text'], ['buttonLink', 'Button link', 'link'], ['highlighted', 'Highlight as most popular', 'checkbox']], { name: 'Plan', price: '$0', period: '/month', features: 'Feature one\nFeature two', buttonText: 'Get started', buttonLink: 'contact', highlighted: false })]],
+  },
+  faq: {
+    label: 'FAQ',
+    fields: [['heading', 'Heading'], ['items', 'Questions', 'list', list('Question', [['question', 'Question'], ['answer', 'Answer', 'textarea']], { question: 'Your question?', answer: 'The answer.' })]],
+  },
+  team: {
+    label: 'Team',
+    fields: [['heading', 'Heading'], ['members', 'Members', 'list', list('Member', [['name', 'Name'], ['role', 'Role'], ['bio', 'Short bio', 'textarea'], ['image', 'Photo (optional)', 'image']], { name: 'Name', role: 'Role', bio: '', image: '' })]],
+  },
   cta: { label: 'Call to action', fields: [['heading', 'Heading'], ['text', 'Text'], ['buttonText', 'Button text'], ['buttonLink', 'Button link', 'link']] },
   contact: { label: 'Contact', fields: [['heading', 'Heading'], ['address', 'Address'], ['phone', 'Phone'], ['email', 'Email'], ['hours', 'Opening hours']] },
+  map: { label: 'Map', fields: [['heading', 'Heading'], ['address', 'Address (shown on Google Maps)']] },
+  video: { label: 'Video', fields: [['heading', 'Heading'], ['url', 'YouTube or Vimeo link'], ['caption', 'Caption']] },
 };
 
 function newBlock(type) {
   const b = { type };
-  for (const [key, , kind] of BLOCKS[type].fields) {
-    b[key] = kind === 'items' ? [{ title: 'Card title', text: 'Short description.', image: '' }] : kind === 'images' ? [] : '';
+  for (const [key, , kind, opts] of BLOCKS[type].fields) {
+    if (kind === 'list') b[key] = [structuredClone(opts.blank)];
+    else if (kind === 'images') b[key] = [];
+    else if (kind === 'checkbox') b[key] = false;
+    else b[key] = '';
+    if (kind === 'image') b[`${key}Alt`] = '';
   }
   if (b.heading === '') b.heading = BLOCKS[type].label;
+  if (type === 'map') b.address = state.site.address || '';
   return b;
 }
 
@@ -267,7 +297,7 @@ function setDirty(v = true) {
 
 async function renderEditor(domain, slug) {
   const [site, page] = await Promise.all([api('GET', `/api/sites/${domain}`), api('GET', `/api/sites/${domain}/pages/${slug}`)]);
-  Object.assign(state, { site, slug, page });
+  Object.assign(state, { site, slug, page, open: new Set([0, 1]) });
   setDirty(false);
   leaveGuard = () => {
     if (!state.dirty) return true;
@@ -443,6 +473,7 @@ function renderSidebar() {
   const LAYOUTS = { header: ['centered', 'left', 'split'], hero: ['fullImage', 'split', 'minimal'], sections: ['cards', 'alternating', 'stacked'], radius: ['sharp', 'soft', 'round'], footer: ['simple', 'columns'] };
   const themeBox = el('details', { class: 'side-section', open: true },
     el('summary', {}, 'Theme'),
+    el('button', { class: 'btn small primary block', onclick: openThemeGallery }, '🎨 Choose theme…'),
     el('div', { class: 'color-grid' }, ['primary', 'secondary', 'accent', 'bg', 'surface', 'text', 'muted'].map((k) =>
       el('label', { class: 'color' }, el('input', { type: 'color', value: theme.colors[k], oninput: (e) => (theme.colors[k] = e.target.value) }), k))),
     el('div', { class: 'layout-grid' }, Object.entries(LAYOUTS).map(([k, opts]) =>
@@ -471,6 +502,71 @@ function renderSidebar() {
   );
 }
 
+// ----- theme gallery -----
+
+// Shows several random themes as live, scaled-down previews of the current page.
+function openThemeGallery() {
+  const d = state.site.domain;
+  const keep = {};
+  const grid = el('div', { class: 'theme-grid' });
+  let closeGallery;
+  // Scale the 1280px-wide previews to fit their cards.
+  const fit = new ResizeObserver((entries) => {
+    for (const e of entries) e.target.style.setProperty('--scale', String(e.contentRect.width / 1280));
+  });
+
+  const card = (theme) => {
+    const url = `/preview/${encodeURIComponent(d)}?slug=${encodeURIComponent(state.slug)}&theme=${encodeURIComponent(JSON.stringify(theme))}`;
+    const c = theme.colors;
+    return el('div', { class: 'theme-card' },
+      (() => {
+        const frame = el('div', { class: 'theme-frame' }, el('iframe', { src: url, title: 'Theme preview', loading: 'lazy', tabindex: '-1' }));
+        fit.observe(frame);
+        return frame;
+      })(),
+      el('div', { class: 'theme-info' },
+        el('div', { class: 'swatches' }, ['primary', 'secondary', 'accent', 'bg', 'text'].map((k) => el('i', { style: `background:${c[k]}`, title: k }))),
+        el('small', { class: 'muted' }, `${theme.fonts.heading} / ${theme.fonts.body}`),
+        el('small', { class: 'muted' }, `${theme.layout.header} header · ${theme.layout.hero} hero · ${theme.layout.sections}`),
+        el('button', {
+          class: 'btn small primary',
+          onclick: async (e) => {
+            e.currentTarget.disabled = true;
+            try {
+              state.site = await api('PUT', `/api/sites/${d}`, { theme });
+              toast('Theme applied');
+              renderSidebar();
+              reloadPreview();
+              closeGallery(true);
+            } catch (err) {
+              fail(err);
+              e.currentTarget.disabled = false;
+            }
+          },
+        }, 'Use this theme')));
+  };
+
+  const shuffle = async () => {
+    const parts = Object.keys(keep).filter((k) => keep[k].checked);
+    if (parts.length === 3) return toast('Uncheck at least one option to shuffle', 'error');
+    grid.replaceChildren(el('p', { class: 'muted' }, 'Generating themes…'));
+    try {
+      const themes = await api('GET', `/api/sites/${d}/themes?count=6&keep=${parts.join(',')}`);
+      grid.replaceChildren(...themes.map(card));
+    } catch (err) {
+      grid.replaceChildren(el('p', { class: 'error' }, err.message));
+    }
+  };
+
+  const controls = el('div', { class: 'row theme-controls' },
+    ['colors', 'fonts', 'layout'].map((k) => el('label', { class: 'check' }, (keep[k] = el('input', { type: 'checkbox' })), `Keep ${k}`)),
+    el('button', { class: 'btn small random', onclick: shuffle }, '🎲 Shuffle'));
+
+  modal('Choose a theme', el('div', {}, controls, grid), null, { wide: true }).then(() => fit.disconnect());
+  closeGallery = document.querySelector('#modal-root .modal-overlay:last-child').closeWith;
+  shuffle();
+}
+
 // ----- page form -----
 
 function renderPageForm() {
@@ -487,7 +583,7 @@ function renderPageForm() {
   const typeSel = el('select', {}, Object.entries(BLOCKS).map(([k, v]) => el('option', { value: k }, v.label)));
   const adder = el('div', { class: 'add-block card' },
     el('span', {}, 'Add a section'), typeSel,
-    el('button', { class: 'btn small primary', onclick: () => { page.blocks.push(newBlock(typeSel.value)); setDirty(); renderPageForm(); } }, '+ Add'));
+    el('button', { class: 'btn small primary', onclick: () => { page.blocks.push(newBlock(typeSel.value)); state.open.add(page.blocks.length - 1); setDirty(); renderPageForm(); } }, '+ Add'));
 
   box.replaceChildren(meta, ...blocks, adder);
 }
@@ -502,8 +598,12 @@ function blockCard(b, i) {
     setDirty();
     renderPageForm();
   };
-  const body = el('div', { class: 'block-fields' }, def.fields.map(([key, label, kind]) => field(b, key, label, kind)));
-  return el('details', { class: 'card block-card', open: i < 2 },
+  const body = el('div', { class: 'block-fields' }, def.fields.map(([key, label, kind, opts]) => field(b, key, label, kind, opts)));
+  return el('details', {
+    class: 'card block-card',
+    open: state.open.has(i),
+    ontoggle: (e) => (e.currentTarget.open ? state.open.add(i) : state.open.delete(i)),
+  },
     el('summary', {},
       el('span', { class: 'block-type' }, def.label),
       el('span', { class: 'block-title' }, b.heading || ''),
@@ -523,10 +623,14 @@ function blockCard(b, i) {
     body);
 }
 
-function field(obj, key, label, kind) {
+function field(obj, key, label, kind, opts) {
   const onInput = (e) => { obj[key] = e.target.value; setDirty(); };
   if (kind === 'textarea') return el('label', { class: 'field' }, label, el('textarea', { rows: 4, oninput: onInput }, obj[key] || ''));
   if (kind === 'image') return imageField(obj, key, label);
+  if (kind === 'checkbox') {
+    return el('label', { class: 'check-field' },
+      el('input', { type: 'checkbox', checked: !!obj[key], onchange: (e) => { obj[key] = e.target.checked; setDirty(); } }), label);
+  }
   if (kind === 'link') {
     const listId = 'pages-list';
     if (!document.getElementById(listId)) {
@@ -535,35 +639,67 @@ function field(obj, key, label, kind) {
     document.getElementById(listId).replaceChildren(...state.site.nav.map((n) => el('option', { value: n.slug }, n.title)));
     return el('label', { class: 'field' }, label, el('input', { value: obj[key] || '', list: listId, placeholder: 'page name (e.g. contact) or https://…', oninput: onInput }));
   }
-  if (kind === 'items') {
-    obj[key] = obj[key] || [];
-    return el('div', { class: 'field' }, label,
-      el('div', { class: 'items' }, obj[key].map((it, j) => el('div', { class: 'item' },
-        el('div', { class: 'item-head' }, el('strong', {}, `Card ${j + 1}`),
-          el('button', { class: 'icon-btn danger-text', 'aria-label': 'Remove card', onclick: () => { obj[key].splice(j, 1); setDirty(); renderPageForm(); } }, '✕')),
-        field(it, 'title', 'Title'), field(it, 'text', 'Text', 'textarea'), imageField(it, 'image', 'Image (optional)')))),
-      el('button', { class: 'btn small', onclick: () => { obj[key].push({ title: 'Card title', text: 'Short description.', image: '' }); setDirty(); renderPageForm(); } }, '+ Add card'));
-  }
+  if (kind === 'list') return listField(obj, key, label, opts);
   if (kind === 'images') {
-    obj[key] = obj[key] || [];
+    // Gallery items are { src, alt }; older sites stored plain strings.
+    obj[key] = (obj[key] || []).map((g) => (typeof g === 'string' ? { src: g, alt: '' } : g));
+    const items = obj[key];
     return el('div', { class: 'field' }, label,
-      el('div', { class: 'thumbs' }, obj[key].map((src, j) => el('div', { class: 'thumb' },
-        el('img', { src: imgUrl(state.site.domain, src), alt: '' }),
-        el('button', { class: 'icon-btn remove', 'aria-label': 'Remove image', onclick: () => { obj[key].splice(j, 1); setDirty(); renderPageForm(); } }, '✕'))),
-      el('button', { class: 'thumb add', onclick: async () => { const p = await pickImage(); if (p) { obj[key].push(p); setDirty(); renderPageForm(); } } }, '+ Add')));
+      el('div', { class: 'thumbs' }, items.map((g, j) => el('div', { class: 'thumb-cell' },
+        el('div', { class: 'thumb' },
+          el('img', { src: imgUrl(state.site.domain, g.src), alt: '' }),
+          el('button', { class: 'icon-btn remove', 'aria-label': 'Remove image', onclick: () => { items.splice(j, 1); setDirty(); renderPageForm(); } }, '✕')),
+        el('input', { class: 'alt-input', value: g.alt || '', placeholder: 'Alt text', 'aria-label': `Alt text for image ${j + 1}`, oninput: (e) => { g.alt = e.target.value; setDirty(); } }))),
+      el('button', { class: 'thumb add', onclick: async () => { const p = await pickImage(); if (p) { items.push({ src: p.path, alt: p.alt || '' }); setDirty(); renderPageForm(); } } }, '+ Add')));
   }
   return el('label', { class: 'field' }, label, el('input', { value: obj[key] || '', oninput: onInput }));
 }
 
+// Repeatable items (cards, plans, questions…) with their own fields.
+function listField(obj, key, label, opts) {
+  obj[key] = obj[key] || [];
+  const items = obj[key];
+  const redraw = () => { setDirty(); renderPageForm(); };
+  const move = (j, dir) => {
+    const k = j + dir;
+    if (k < 0 || k >= items.length) return;
+    [items[j], items[k]] = [items[k], items[j]];
+    redraw();
+  };
+  return el('div', { class: 'field' }, label,
+    el('div', { class: 'items' }, items.map((it, j) => el('div', { class: 'item' },
+      el('div', { class: 'item-head' }, el('strong', {}, `${opts.label} ${j + 1}`),
+        el('span', { class: 'row' },
+          el('button', { class: 'icon-btn', 'aria-label': `Move ${opts.label} up`, disabled: j === 0, onclick: () => move(j, -1) }, '↑'),
+          el('button', { class: 'icon-btn', 'aria-label': `Move ${opts.label} down`, disabled: j === items.length - 1, onclick: () => move(j, 1) }, '↓'),
+          el('button', { class: 'icon-btn danger-text', 'aria-label': `Remove ${opts.label}`, onclick: () => { items.splice(j, 1); redraw(); } }, '✕'))),
+      opts.fields.map(([k, l, kind, o]) => field(it, k, l, kind, o))))),
+    el('button', { class: 'btn small', onclick: () => { items.push(structuredClone(opts.blank)); redraw(); } }, `+ Add ${opts.label.toLowerCase()}`));
+}
+
+// Image picker + alt text. The alt text is stored next to the image as `<key>Alt`.
 function imageField(obj, key, label) {
+  const altKey = `${key}Alt`;
   const preview = el('div', { class: 'image-preview' });
+  const altInput = el('input', { value: obj[altKey] || '', placeholder: 'Describe the image (for screen readers & SEO)', oninput: (e) => { obj[altKey] = e.target.value; setDirty(); } });
   const draw = () => preview.replaceChildren(obj[key] ? el('img', { src: imgUrl(state.site.domain, obj[key]), alt: '' }) : el('span', { class: 'muted' }, 'No image'));
   draw();
   return el('div', { class: 'field' }, label,
     el('div', { class: 'image-field' }, preview,
       el('div', { class: 'stack small' },
-        el('button', { class: 'btn small', onclick: async () => { const p = await pickImage(); if (p) { obj[key] = p; setDirty(); draw(); } } }, obj[key] ? 'Change image' : 'Choose image'),
-        obj[key] && el('button', { class: 'btn small ghost danger-text', onclick: () => { obj[key] = ''; setDirty(); renderPageForm(); } }, 'Remove'))));
+        el('button', {
+          class: 'btn small',
+          onclick: async () => {
+            const p = await pickImage();
+            if (!p) return;
+            obj[key] = p.path;
+            if (p.alt && !obj[altKey]) altInput.value = obj[altKey] = p.alt;
+            setDirty();
+            renderPageForm();
+          },
+        }, obj[key] ? 'Change image' : 'Choose image'),
+        obj[key] && el('button', { class: 'btn small ghost danger-text', onclick: () => { obj[key] = ''; obj[altKey] = ''; setDirty(); renderPageForm(); } }, 'Remove'))),
+    obj[key] ? el('label', { class: 'field small alt-field' }, 'Alt text', altInput) : null);
 }
 
 // ---------- image picker ----------
@@ -599,14 +735,14 @@ function pickImage() {
   const panels = {
     async site() {
       const imgs = await api('GET', `/api/sites/${d}/images`);
-      return grid(imgs.map((i) => ({ ...i, thumb: i.url })), (it) => choose(async () => it.path), 'This site has no images yet.');
+      return grid(imgs.map((i) => ({ ...i, thumb: i.url })), (it) => choose(async () => ({ path: it.path })), 'This site has no images yet.');
     },
     async bank(category = '') {
       const data = await api('GET', `/api/images/bank${category ? '?category=' + encodeURIComponent(category) : ''}`);
       const sel = el('select', { onchange: async () => content.replaceChildren(await panels.bank(sel.value)) },
         el('option', { value: '' }, 'All categories'), data.categories.map((c) => el('option', { value: c, selected: c === category }, c)));
       return el('div', {}, el('div', { class: 'row' }, sel, el('span', { class: 'muted' }, `${data.images.length} images`)),
-        grid(data.images.map((i) => ({ ...i, thumb: i.url, caption: i.category })), (it, tile) => choose(async () => (await api('POST', `/api/sites/${d}/images`, { source: 'bank', bankPath: it.bankPath })).path, tile), 'The bank is empty. Search online or upload images.'));
+        grid(data.images.map((i) => ({ ...i, thumb: i.url, caption: i.category })), (it, tile) => choose(() => api('POST', `/api/sites/${d}/images`, { source: 'bank', bankPath: it.bankPath }), tile), 'The bank is empty. Search online or upload images.'));
     },
     async online() {
       const q = el('input', { value: state.site.imageQuery || '', placeholder: 'e.g. coffee, beach, office' });
@@ -618,8 +754,8 @@ function pickImage() {
           const data = await api('GET', `/api/images/search?q=${encodeURIComponent(q.value)}`);
           results.replaceChildren(
             data.source === 'picsum' ? el('p', { class: 'muted small' }, 'Showing random Picsum photos. Add UNSPLASH_ACCESS_KEY to .env for keyword search.') : null,
-            grid(data.results.map((r) => ({ ...r, title: r.credit, caption: r.credit })), (it, tile) =>
-              choose(async () => (await api('POST', `/api/sites/${d}/images`, { source: 'online', url: it.full, downloadLocation: it.downloadLocation, category: slugify(q.value) || 'online', name: slugify(q.value) || 'online' })).path, tile), 'No results.'));
+            grid(data.results.map((r) => ({ ...r, title: r.credit, caption: r.credit, imageAlt: r.alt })), (it, tile) =>
+              choose(() => api('POST', `/api/sites/${d}/images`, { source: 'online', url: it.full, downloadLocation: it.downloadLocation, alt: it.alt, category: slugify(q.value) || 'online', name: slugify(q.value) || 'online' }), tile), 'No results.'));
         } catch (err) {
           results.replaceChildren(el('p', { class: 'error' }, err.message));
         }
@@ -643,7 +779,7 @@ function pickImage() {
           status.textContent = 'Uploading…';
           choose(async () => {
             const saved = await api('POST', '/api/images/upload', fd);
-            return (await api('POST', `/api/sites/${d}/images`, { source: 'bank', bankPath: saved[0].bankPath })).path;
+            return api('POST', `/api/sites/${d}/images`, { source: 'bank', bankPath: saved[0].bankPath });
           });
         },
       },

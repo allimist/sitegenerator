@@ -19,6 +19,7 @@
             "heading": "Luigi's Trattoria",
             "subheading": "Authentic Italian cooking since 1987",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Book a table tonight",
             "buttonLink": "contact"
           },
@@ -28,15 +29,21 @@
             "items": [
               {
                 "title": "Handmade Pasta",
-                "text": "Rolled fresh every morning in our kitchen."
+                "text": "Rolled fresh every morning in our kitchen.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Wood-Fired Pizza",
-                "text": "Baked at 450°C in our brick oven."
+                "text": "Baked at 450°C in our brick oven.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Local Wines",
-                "text": "A curated cellar of regional favourites."
+                "text": "A curated cellar of regional favourites.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -44,7 +51,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "A family kitchen in the heart of the city, serving recipes passed down for three generations.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "The best carbonara outside of Rome. We come back every month.",
+                "name": "Sofia R.",
+                "role": "Regular guest",
+                "image": ""
+              },
+              {
+                "quote": "Warm staff, perfect wine pairing and a tiramisu to die for.",
+                "name": "Daniel K.",
+                "role": "Food blogger",
+                "image": ""
+              },
+              {
+                "quote": "We booked our anniversary dinner here and it was unforgettable.",
+                "name": "Maya & Tom",
+                "role": "Anniversary dinner",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -64,6 +98,7 @@
             "heading": "About us",
             "subheading": "Authentic Italian cooking since 1987",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -71,7 +106,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "A family kitchen in the heart of the city, serving recipes passed down for three generations.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Luigi Bianchi",
+                "role": "Head chef & owner",
+                "bio": "Cooking family recipes since he was twelve.",
+                "image": ""
+              },
+              {
+                "name": "Giulia Rossi",
+                "role": "Pastry chef",
+                "bio": "Makes every dessert in-house each morning.",
+                "image": ""
+              },
+              {
+                "name": "Marco Conti",
+                "role": "Sommelier",
+                "bio": "Curates our list of regional Italian wines.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -89,6 +151,7 @@
             "heading": "Menu",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -99,22 +162,44 @@
               {
                 "title": "Antipasti",
                 "text": "Bruschetta, burrata and cured meats to share.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Primi",
                 "text": "Fresh pasta with seasonal sauces.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Secondi",
                 "text": "Grilled fish, slow-cooked meats and more.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Dolci",
                 "text": "Tiramisu, panna cotta and gelato.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Do you take reservations?",
+                "answer": "Yes. Call us or use the contact form and we will confirm your table the same day."
+              },
+              {
+                "question": "Do you have vegetarian and gluten-free options?",
+                "answer": "Most of our pasta can be made gluten-free, and every section of the menu has vegetarian dishes."
+              },
+              {
+                "question": "Can I book the restaurant for a private event?",
+                "answer": "Yes, our back room seats up to 40 guests. Get in touch for set menus and pricing."
               }
             ]
           },
@@ -136,6 +221,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -143,12 +229,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -162,6 +266,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -172,6 +277,11 @@
             "phone": "+1 (555) 010-2000",
             "email": "hello@luigis-trattoria.com",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -197,6 +307,7 @@
             "heading": "Bean & Bloom",
             "subheading": "Small-batch roasts, big-hearted mornings",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Come say hi",
             "buttonLink": "contact"
           },
@@ -206,15 +317,21 @@
             "items": [
               {
                 "title": "Roasted In-House",
-                "text": "Beans roasted weekly in small batches."
+                "text": "Beans roasted weekly in small batches.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Fresh Pastries",
-                "text": "Baked every morning by our pastry team."
+                "text": "Baked every morning by our pastry team.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Cozy Space",
-                "text": "Free Wi-Fi, warm light and comfy chairs."
+                "text": "Free Wi-Fi, warm light and comfy chairs.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -222,7 +339,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "We started with one espresso machine and a love for good mornings. Today we roast our own beans and still greet every guest by name.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "My favourite flat white in town, and the staff remember my order.",
+                "name": "Ella M.",
+                "role": "Daily regular",
+                "image": ""
+              },
+              {
+                "quote": "Perfect spot to work for a few hours. Great Wi-Fi and better banana bread.",
+                "name": "Jon P.",
+                "role": "Freelance designer",
+                "image": ""
+              },
+              {
+                "quote": "Their single-origin pour-over changed how I think about coffee.",
+                "name": "Priya S.",
+                "role": "Coffee lover",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -242,6 +386,7 @@
             "heading": "About us",
             "subheading": "Small-batch roasts, big-hearted mornings",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -249,7 +394,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "We started with one espresso machine and a love for good mornings. Today we roast our own beans and still greet every guest by name.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Nora Lind",
+                "role": "Founder & head roaster",
+                "bio": "Sources beans directly from small farms.",
+                "image": ""
+              },
+              {
+                "name": "Sam Ortiz",
+                "role": "Head barista",
+                "bio": "Two-time regional latte art champion.",
+                "image": ""
+              },
+              {
+                "name": "Lea Park",
+                "role": "Pastry baker",
+                "bio": "Bakes everything on the counter each morning.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -267,6 +439,7 @@
             "heading": "Menu",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -277,22 +450,44 @@
               {
                 "title": "Espresso Bar",
                 "text": "Espresso, cortado, flat white and more.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Filter & Pour-Over",
                 "text": "Single origins brewed by hand.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Cold Drinks",
                 "text": "Cold brew, iced lattes and lemonades.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Bakery",
                 "text": "Croissants, cookies and banana bread.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Do you have plant-based milk?",
+                "answer": "Yes: oat, almond and soy at no extra charge."
+              },
+              {
+                "question": "Can I buy your beans to brew at home?",
+                "answer": "Yes, whole bean or ground to order, roasted fresh every week."
+              },
+              {
+                "question": "Is there Wi-Fi and power for laptops?",
+                "answer": "Free Wi-Fi and plenty of sockets. We just ask laptop users to share big tables at lunchtime."
               }
             ]
           },
@@ -314,6 +509,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -321,12 +517,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -340,6 +554,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -350,6 +565,11 @@
             "phone": "+1 (555) 010-2111",
             "email": "hello@beanandbloom.coffee",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -375,6 +595,7 @@
             "heading": "IronPulse Fitness",
             "subheading": "Stronger every single day",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Claim your free trial week",
             "buttonLink": "contact"
           },
@@ -384,15 +605,21 @@
             "items": [
               {
                 "title": "Open 24/7",
-                "text": "Train on your schedule, any hour."
+                "text": "Train on your schedule, any hour.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Expert Coaches",
-                "text": "Certified trainers ready to help."
+                "text": "Certified trainers ready to help.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Modern Equipment",
-                "text": "Free weights, machines and turf."
+                "text": "Free weights, machines and turf.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -400,7 +627,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "IronPulse was built by coaches who believe fitness should feel welcoming, motivating and fun for everyone.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "Lost 12 kg in six months with the coaches here. The community keeps me going.",
+                "name": "Chris D.",
+                "role": "Member since 2023",
+                "image": ""
+              },
+              {
+                "quote": "Clean, never crowded, and the 24/7 access fits my shift work.",
+                "name": "Ana L.",
+                "role": "Nurse",
+                "image": ""
+              },
+              {
+                "quote": "The strength program finally got me my first pull-up at 45!",
+                "name": "Mike B.",
+                "role": "Strength class",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -420,6 +674,7 @@
             "heading": "About us",
             "subheading": "Stronger every single day",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -427,7 +682,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "IronPulse was built by coaches who believe fitness should feel welcoming, motivating and fun for everyone.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Jake Moreno",
+                "role": "Head coach",
+                "bio": "Certified strength and conditioning specialist.",
+                "image": ""
+              },
+              {
+                "name": "Tara Singh",
+                "role": "HIIT & spin coach",
+                "bio": "Brings the energy to every early class.",
+                "image": ""
+              },
+              {
+                "name": "Leo Grant",
+                "role": "Personal trainer",
+                "bio": "Specialises in mobility and injury recovery.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -445,6 +727,7 @@
             "heading": "Classes",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -455,22 +738,77 @@
               {
                 "title": "HIIT",
                 "text": "High-intensity sessions to burn and build.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Strength",
                 "text": "Barbell programs for every level.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Spin",
                 "text": "Music-driven indoor cycling.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Personal Training",
                 "text": "One-on-one coaching tailored to you.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "pricing",
+            "heading": "Pricing",
+            "plans": [
+              {
+                "name": "Basic",
+                "price": "$29",
+                "period": "/month",
+                "features": "Gym floor access\nLocker rooms\nFree fitness assessment",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              },
+              {
+                "name": "Unlimited",
+                "price": "$49",
+                "period": "/month",
+                "features": "24/7 access\nAll group classes\nGuest pass each month\nApp workout plans",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": true
+              },
+              {
+                "name": "Coaching",
+                "price": "$129",
+                "period": "/month",
+                "features": "Everything in Unlimited\n4 personal training sessions\nNutrition guidance",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Can I try the gym before joining?",
+                "answer": "Yes, your first week is free. Just bring a photo ID."
+              },
+              {
+                "question": "Is there a joining fee or contract?",
+                "answer": "No joining fee, and memberships are month to month. Cancel any time."
+              },
+              {
+                "question": "Do you offer classes for beginners?",
+                "answer": "Every class has beginner options, and our coaches will help you with technique."
               }
             ]
           },
@@ -492,6 +830,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -499,12 +838,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -518,6 +875,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -528,6 +886,11 @@
             "phone": "+1 (555) 010-2222",
             "email": "hello@ironpulse.fit",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -553,6 +916,7 @@
             "heading": "BrightSmile Dental",
             "subheading": "Gentle care for healthy smiles",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Book your check-up",
             "buttonLink": "contact"
           },
@@ -562,15 +926,21 @@
             "items": [
               {
                 "title": "Gentle Care",
-                "text": "Comfort-first treatment for nervous patients."
+                "text": "Comfort-first treatment for nervous patients.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Modern Tech",
-                "text": "Digital X-rays and same-day crowns."
+                "text": "Digital X-rays and same-day crowns.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Family Friendly",
-                "text": "Care for kids, parents and grandparents."
+                "text": "Care for kids, parents and grandparents.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -578,7 +948,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Our team of dentists and hygienists has cared for local families for over 15 years.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "I used to dread the dentist. Here I actually feel relaxed.",
+                "name": "Hannah W.",
+                "role": "Patient",
+                "image": ""
+              },
+              {
+                "quote": "They fixed my chipped tooth the same day. Amazing work.",
+                "name": "Oliver T.",
+                "role": "Patient",
+                "image": ""
+              },
+              {
+                "quote": "Our kids love their visits and the team is so patient with them.",
+                "name": "The Garcia family",
+                "role": "Family patients",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -598,6 +995,7 @@
             "heading": "About us",
             "subheading": "Gentle care for healthy smiles",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -605,7 +1003,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Our team of dentists and hygienists has cared for local families for over 15 years.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Dr. Emily Chen",
+                "role": "Lead dentist",
+                "bio": "15 years of experience in family dentistry.",
+                "image": ""
+              },
+              {
+                "name": "Dr. Ravi Patel",
+                "role": "Orthodontist",
+                "bio": "Specialist in clear aligners and braces.",
+                "image": ""
+              },
+              {
+                "name": "Laura Fox",
+                "role": "Dental hygienist",
+                "bio": "Gentle cleanings and great advice.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -623,6 +1048,7 @@
             "heading": "Services",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -633,22 +1059,44 @@
               {
                 "title": "Check-ups & Cleaning",
                 "text": "Routine exams to keep your smile healthy.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Whitening",
                 "text": "Professional whitening for a brighter smile.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Implants",
                 "text": "Long-lasting replacements for missing teeth.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Orthodontics",
                 "text": "Clear aligners and braces for all ages.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Do you accept insurance?",
+                "answer": "We work with most major dental insurance plans and can check your coverage before treatment."
+              },
+              {
+                "question": "Do you handle dental emergencies?",
+                "answer": "Yes, we keep same-day slots free for emergencies. Call us first thing in the morning."
+              },
+              {
+                "question": "How often should I have a check-up?",
+                "answer": "Every six months for most people. We will recommend a schedule that fits your needs."
               }
             ]
           },
@@ -670,6 +1118,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -677,12 +1126,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -696,6 +1163,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -706,6 +1174,11 @@
             "phone": "+1 (555) 010-2333",
             "email": "hello@brightsmile-dental.com",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -731,6 +1204,7 @@
             "heading": "Harper & Cole Law",
             "subheading": "Clear advice. Strong representation.",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Schedule a free consultation",
             "buttonLink": "contact"
           },
@@ -740,15 +1214,21 @@
             "items": [
               {
                 "title": "30+ Years",
-                "text": "Decades of combined courtroom experience."
+                "text": "Decades of combined courtroom experience.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Client Focused",
-                "text": "Direct access to your attorney."
+                "text": "Direct access to your attorney.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Free Consultation",
-                "text": "Understand your options at no cost."
+                "text": "Understand your options at no cost.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -756,7 +1236,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Harper & Cole is an independent firm that pairs big-firm expertise with personal attention.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "They explained every step clearly and got us a fair settlement.",
+                "name": "Robert H.",
+                "role": "Business client",
+                "image": ""
+              },
+              {
+                "quote": "Compassionate and professional during a very hard divorce.",
+                "name": "Lisa M.",
+                "role": "Family law client",
+                "image": ""
+              },
+              {
+                "quote": "Our estate plan was done quickly and without legal jargon.",
+                "name": "Paul & Jean S.",
+                "role": "Estate planning",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -776,6 +1283,7 @@
             "heading": "About us",
             "subheading": "Clear advice. Strong representation.",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -783,7 +1291,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Harper & Cole is an independent firm that pairs big-firm expertise with personal attention.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Grace Harper",
+                "role": "Founding partner",
+                "bio": "Family and estate law, 20+ years.",
+                "image": ""
+              },
+              {
+                "name": "Nathan Cole",
+                "role": "Founding partner",
+                "bio": "Business law and commercial disputes.",
+                "image": ""
+              },
+              {
+                "name": "Irene Walsh",
+                "role": "Associate attorney",
+                "bio": "Real estate and property law.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -801,6 +1336,7 @@
             "heading": "Practice Areas",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -811,22 +1347,44 @@
               {
                 "title": "Family Law",
                 "text": "Divorce, custody and mediation.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Business Law",
                 "text": "Contracts, formation and disputes.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Real Estate",
                 "text": "Closings, leases and title issues.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Estate Planning",
                 "text": "Wills, trusts and probate.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Is the first consultation really free?",
+                "answer": "Yes. The first 30-minute consultation is free and there is no obligation."
+              },
+              {
+                "question": "How are your fees structured?",
+                "answer": "Depending on the case we offer fixed fees, hourly rates or contingency arrangements. We agree fees in writing up front."
+              },
+              {
+                "question": "How long will my case take?",
+                "answer": "Every case is different. After the first meeting we give you a realistic timeline and keep you updated."
               }
             ]
           },
@@ -848,6 +1406,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -855,12 +1414,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -874,6 +1451,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -884,6 +1462,11 @@
             "phone": "+1 (555) 010-2444",
             "email": "hello@harpercole-law.com",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -909,6 +1492,7 @@
             "heading": "Keystone Realty",
             "subheading": "Find the place you belong",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Get a free home valuation",
             "buttonLink": "contact"
           },
@@ -918,15 +1502,21 @@
             "items": [
               {
                 "title": "Local Experts",
-                "text": "Agents who know every neighborhood."
+                "text": "Agents who know every neighborhood.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Fair Pricing",
-                "text": "Data-driven valuations you can trust."
+                "text": "Data-driven valuations you can trust.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Full Support",
-                "text": "From first viewing to final signature."
+                "text": "From first viewing to final signature.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -934,7 +1524,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Keystone Realty helps buyers, sellers and renters make confident moves with honest advice.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "Sold our house above asking price in under two weeks.",
+                "name": "Karen & Bill",
+                "role": "Home sellers",
+                "image": ""
+              },
+              {
+                "quote": "They found us the perfect first apartment and handled all the paperwork.",
+                "name": "Tyler J.",
+                "role": "First-time buyer",
+                "image": ""
+              },
+              {
+                "quote": "Honest advice, no pressure. I would use Keystone again in a heartbeat.",
+                "name": "Monica F.",
+                "role": "Home buyer",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -954,6 +1571,7 @@
             "heading": "About us",
             "subheading": "Find the place you belong",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -961,7 +1579,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Keystone Realty helps buyers, sellers and renters make confident moves with honest advice.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Alex Turner",
+                "role": "Managing broker",
+                "bio": "Has helped over 600 families move.",
+                "image": ""
+              },
+              {
+                "name": "Bella Nguyen",
+                "role": "Sales agent",
+                "bio": "City apartment and condo specialist.",
+                "image": ""
+              },
+              {
+                "name": "Victor Lopez",
+                "role": "Commercial agent",
+                "bio": "Offices, retail and investment property.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -979,6 +1624,7 @@
             "heading": "Listings",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -989,22 +1635,44 @@
               {
                 "title": "Family Homes",
                 "text": "Spacious houses near great schools.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "City Apartments",
                 "text": "Modern living close to everything.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Luxury Estates",
                 "text": "Exceptional properties with character.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Commercial",
                 "text": "Offices and retail spaces.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How do you value my home?",
+                "answer": "We compare recent local sales, current listings and your home features, then visit in person."
+              },
+              {
+                "question": "What are your fees?",
+                "answer": "Our commission is agreed up front, and you only pay when your property sells."
+              },
+              {
+                "question": "Can you help me get a mortgage?",
+                "answer": "We work with trusted mortgage advisers and can introduce you at no cost."
               }
             ]
           },
@@ -1026,6 +1694,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1033,12 +1702,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -1052,6 +1739,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1062,6 +1750,11 @@
             "phone": "+1 (555) 010-2555",
             "email": "hello@keystone-realty.com",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -1087,6 +1780,7 @@
             "heading": "Mira Lens Studio",
             "subheading": "Moments, beautifully kept",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Check my availability",
             "buttonLink": "contact"
           },
@@ -1096,15 +1790,21 @@
             "items": [
               {
                 "title": "Natural Light",
-                "text": "Honest, warm and timeless images."
+                "text": "Honest, warm and timeless images.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Fast Delivery",
-                "text": "Edited galleries within two weeks."
+                "text": "Edited galleries within two weeks.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Print Ready",
-                "text": "High-resolution files and prints."
+                "text": "High-resolution files and prints.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -1112,7 +1812,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "I am a photographer who loves quiet details, golden light and real emotion.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "Mira captured our wedding perfectly. We relive the day every time we look at the photos.",
+                "name": "Amelia & Jack",
+                "role": "Wedding couple",
+                "image": ""
+              },
+              {
+                "quote": "Our product shots doubled our online sales.",
+                "name": "Lena K.",
+                "role": "Shop owner",
+                "image": ""
+              },
+              {
+                "quote": "Relaxed, fun and the family portraits are stunning.",
+                "name": "The Novak family",
+                "role": "Family session",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -1132,6 +1859,7 @@
             "heading": "About us",
             "subheading": "Moments, beautifully kept",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1139,7 +1867,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "I am a photographer who loves quiet details, golden light and real emotion.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Mira Lens",
+                "role": "Photographer & founder",
+                "bio": "Ten years of weddings, portraits and brands.",
+                "image": ""
+              },
+              {
+                "name": "Tom Ashby",
+                "role": "Second shooter",
+                "bio": "Captures the candid moments at weddings.",
+                "image": ""
+              },
+              {
+                "name": "Ivy Cole",
+                "role": "Retoucher",
+                "bio": "Natural, timeless editing.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -1157,6 +1912,7 @@
             "heading": "Services",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1167,22 +1923,77 @@
               {
                 "title": "Weddings",
                 "text": "Full-day coverage of your story.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Portraits",
                 "text": "Individuals, couples and families.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Brands",
                 "text": "Product and lifestyle imagery.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Events",
                 "text": "Parties, launches and conferences.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "pricing",
+            "heading": "Pricing",
+            "plans": [
+              {
+                "name": "Portrait",
+                "price": "$290",
+                "period": "/session",
+                "features": "1-hour session\n1 location\n40 edited photos",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              },
+              {
+                "name": "Wedding",
+                "price": "$2,400",
+                "period": "/day",
+                "features": "8 hours of coverage\nSecond photographer\n500+ edited photos\nOnline gallery",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": true
+              },
+              {
+                "name": "Brand",
+                "price": "$650",
+                "period": "/half day",
+                "features": "4 hours on location\nProduct & lifestyle shots\nCommercial license",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How many photos will I receive?",
+                "answer": "Usually 50–80 edited images per hour of shooting, delivered in an online gallery."
+              },
+              {
+                "question": "Do you travel for shoots?",
+                "answer": "Yes, anywhere. Travel within 50 km is included in the price."
+              },
+              {
+                "question": "How do I book a date?",
+                "answer": "Send a message with your date and plans. A 30% deposit secures your booking."
               }
             ]
           },
@@ -1204,6 +2015,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1211,12 +2023,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -1230,6 +2060,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1240,6 +2071,11 @@
             "phone": "+1 (555) 010-2666",
             "email": "hello@miralens.studio",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -1265,6 +2101,7 @@
             "heading": "Lotus Flow Yoga",
             "subheading": "Breathe, move, restore",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Your first class is free",
             "buttonLink": "contact"
           },
@@ -1274,15 +2111,21 @@
             "items": [
               {
                 "title": "All Levels",
-                "text": "Beginner-friendly classes every day."
+                "text": "Beginner-friendly classes every day.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Small Groups",
-                "text": "Personal attention in every class."
+                "text": "Personal attention in every class.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Calm Space",
-                "text": "A bright, peaceful studio."
+                "text": "A bright, peaceful studio.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -1290,7 +2133,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Lotus Flow is a community studio where everyone is welcome on the mat, whatever their age or experience.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "Lotus Flow is my calm place. I leave every class lighter.",
+                "name": "Rachel P.",
+                "role": "Member",
+                "image": ""
+              },
+              {
+                "quote": "As a total beginner I felt welcome from day one.",
+                "name": "Ben O.",
+                "role": "Beginner",
+                "image": ""
+              },
+              {
+                "quote": "The prenatal classes helped me so much during pregnancy.",
+                "name": "Sara L.",
+                "role": "Prenatal student",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -1310,6 +2180,7 @@
             "heading": "About us",
             "subheading": "Breathe, move, restore",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1317,7 +2188,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Lotus Flow is a community studio where everyone is welcome on the mat, whatever their age or experience.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Maya Rivers",
+                "role": "Founder & lead teacher",
+                "bio": "500-hour certified Vinyasa teacher.",
+                "image": ""
+              },
+              {
+                "name": "Kai Moon",
+                "role": "Yin & meditation teacher",
+                "bio": "Teaches stillness and breathwork.",
+                "image": ""
+              },
+              {
+                "name": "Ines Duarte",
+                "role": "Prenatal teacher",
+                "bio": "Doula and certified prenatal yoga teacher.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -1335,6 +2233,7 @@
             "heading": "Classes",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1345,22 +2244,77 @@
               {
                 "title": "Vinyasa Flow",
                 "text": "Dynamic sequences linked with breath.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Yin Yoga",
                 "text": "Slow, deep stretches to release tension.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Meditation",
                 "text": "Guided practice for a quiet mind.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Prenatal",
                 "text": "Gentle yoga for expecting mothers.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "pricing",
+            "heading": "Pricing",
+            "plans": [
+              {
+                "name": "Drop-in",
+                "price": "$18",
+                "period": "/class",
+                "features": "Any single class\nMat & props included",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              },
+              {
+                "name": "Monthly",
+                "price": "$99",
+                "period": "/month",
+                "features": "Unlimited classes\nOnline class library\n10% off workshops",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": true
+              },
+              {
+                "name": "10-class pass",
+                "price": "$150",
+                "period": "",
+                "features": "Valid for 4 months\nShareable with a friend",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "I have never done yoga. Where do I start?",
+                "answer": "Try our Beginner Flow or Yin classes. Teachers offer options for every level."
+              },
+              {
+                "question": "What should I bring?",
+                "answer": "Comfortable clothes and water. Mats and props are free to use."
+              },
+              {
+                "question": "Do I need to book in advance?",
+                "answer": "Booking is recommended because classes are small, but drop-ins are welcome when space allows."
               }
             ]
           },
@@ -1382,6 +2336,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1389,12 +2344,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -1408,6 +2381,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1418,6 +2392,11 @@
             "phone": "+1 (555) 010-2777",
             "email": "hello@lotusflow.yoga",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -1443,6 +2422,7 @@
             "heading": "Nimbus Labs",
             "subheading": "Ship faster with smarter cloud tools",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Start your free trial",
             "buttonLink": "contact"
           },
@@ -1452,15 +2432,21 @@
             "items": [
               {
                 "title": "Lightning Fast",
-                "text": "Deploy in seconds, not hours."
+                "text": "Deploy in seconds, not hours.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Secure by Default",
-                "text": "Encryption and SSO built in."
+                "text": "Encryption and SSO built in.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Scales With You",
-                "text": "From side project to enterprise."
+                "text": "From side project to enterprise.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -1468,7 +2454,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Nimbus Labs is a small team of engineers building the developer tools we always wanted.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "We cut our deploy time from 40 minutes to 30 seconds.",
+                "name": "Jordan L.",
+                "role": "CTO, Brightly",
+                "image": ""
+              },
+              {
+                "quote": "Setup took one afternoon. Support answers in minutes.",
+                "name": "Kim A.",
+                "role": "Lead engineer, Parcel",
+                "image": ""
+              },
+              {
+                "quote": "Finally, monitoring our whole team actually uses.",
+                "name": "Samir H.",
+                "role": "Founder, Loopwise",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -1488,6 +2501,7 @@
             "heading": "About us",
             "subheading": "Ship faster with smarter cloud tools",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1495,7 +2509,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Nimbus Labs is a small team of engineers building the developer tools we always wanted.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Ava Brooks",
+                "role": "CEO & co-founder",
+                "bio": "Previously led platform engineering at a unicorn.",
+                "image": ""
+              },
+              {
+                "name": "Noah Kim",
+                "role": "CTO & co-founder",
+                "bio": "Built deploy tools used by thousands of developers.",
+                "image": ""
+              },
+              {
+                "name": "Zoe Martin",
+                "role": "Head of design",
+                "bio": "Makes complex tools feel simple.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -1513,6 +2554,7 @@
             "heading": "Product",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1523,22 +2565,77 @@
               {
                 "title": "Deploy",
                 "text": "One-click deploys from your repo.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Monitor",
                 "text": "Real-time metrics and alerts.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Collaborate",
                 "text": "Shared environments for your team.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Integrate",
                 "text": "Works with the tools you already use.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "pricing",
+            "heading": "Pricing",
+            "plans": [
+              {
+                "name": "Starter",
+                "price": "$0",
+                "period": "/month",
+                "features": "3 projects\nCommunity support\nBasic metrics",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              },
+              {
+                "name": "Team",
+                "price": "$49",
+                "period": "/user/month",
+                "features": "Unlimited projects\nPreview environments\nAlerts & dashboards\nPriority support",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": true
+              },
+              {
+                "name": "Enterprise",
+                "price": "Custom",
+                "period": "",
+                "features": "SSO & audit logs\nDedicated support\n99.99% SLA",
+                "buttonText": "Get started",
+                "buttonLink": "contact",
+                "highlighted": false
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Is there a free plan?",
+                "answer": "Yes. The Starter plan is free forever for personal projects."
+              },
+              {
+                "question": "Can I migrate from my current platform?",
+                "answer": "Yes, our import tool moves your apps and environment variables in a few clicks."
+              },
+              {
+                "question": "Where is my data stored?",
+                "answer": "In EU or US regions of your choice, encrypted at rest and in transit."
               }
             ]
           },
@@ -1560,6 +2657,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1567,12 +2665,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -1586,6 +2702,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1596,6 +2713,11 @@
             "phone": "+1 (555) 010-2888",
             "email": "hello@nimbuslabs.io",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }
@@ -1621,6 +2743,7 @@
             "heading": "Wanderway Travel",
             "subheading": "Journeys crafted around you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "Plan my next trip",
             "buttonLink": "contact"
           },
@@ -1630,15 +2753,21 @@
             "items": [
               {
                 "title": "Tailor-Made Trips",
-                "text": "Every itinerary designed for you."
+                "text": "Every itinerary designed for you.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "24/7 Support",
-                "text": "Help wherever you are in the world."
+                "text": "Help wherever you are in the world.",
+                "image": "",
+                "imageAlt": ""
               },
               {
                 "title": "Best Value",
-                "text": "Trusted partners and fair prices."
+                "text": "Trusted partners and fair prices.",
+                "image": "",
+                "imageAlt": ""
               }
             ]
           },
@@ -1646,7 +2775,34 @@
             "type": "imageText",
             "heading": "Our story",
             "body": "Wanderway was founded by lifelong travellers who want to share the world’s best experiences with you.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "testimonials",
+            "heading": "What people say",
+            "items": [
+              {
+                "quote": "Our honeymoon in Bali was planned down to the last detail. Pure magic.",
+                "name": "Emma & Luis",
+                "role": "Honeymooners",
+                "image": ""
+              },
+              {
+                "quote": "When our flight was cancelled they rebooked us within an hour.",
+                "name": "David N.",
+                "role": "Family trip",
+                "image": ""
+              },
+              {
+                "quote": "The safari was the trip of a lifetime. Thank you, Wanderway!",
+                "name": "Claire B.",
+                "role": "Adventure traveller",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "cta",
@@ -1666,6 +2822,7 @@
             "heading": "About us",
             "subheading": "Journeys crafted around you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1673,7 +2830,34 @@
             "type": "imageText",
             "heading": "Who we are",
             "body": "Wanderway was founded by lifelong travellers who want to share the world’s best experiences with you.",
-            "image": "auto"
+            "image": "auto",
+            "imageAlt": "",
+            "buttonText": "",
+            "buttonLink": ""
+          },
+          {
+            "type": "team",
+            "heading": "Meet the team",
+            "members": [
+              {
+                "name": "Olivia Hart",
+                "role": "Founder & travel designer",
+                "bio": "Has visited over 70 countries.",
+                "image": ""
+              },
+              {
+                "name": "Mateo Silva",
+                "role": "Adventure specialist",
+                "bio": "Safaris, treks and expeditions.",
+                "image": ""
+              },
+              {
+                "name": "Hana Sato",
+                "role": "Asia specialist",
+                "bio": "Japan, Bali and Southeast Asia expert.",
+                "image": ""
+              }
+            ]
           },
           {
             "type": "text",
@@ -1691,6 +2875,7 @@
             "heading": "Destinations",
             "subheading": "Everything we offer",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1701,22 +2886,44 @@
               {
                 "title": "Beach Escapes",
                 "text": "Sun, sand and crystal-clear water.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "City Breaks",
                 "text": "Culture, food and nightlife.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Mountain Adventures",
                 "text": "Hiking, skiing and fresh air.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
               },
               {
                 "title": "Safari",
                 "text": "Unforgettable wildlife encounters.",
-                "image": "auto"
+                "image": "auto",
+                "imageAlt": ""
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "heading": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Can you plan a trip for a specific budget?",
+                "answer": "Absolutely. Tell us your budget and we will design the best trip within it."
+              },
+              {
+                "question": "Is travel insurance included?",
+                "answer": "Insurance is optional and we can add a policy that covers your whole trip."
+              },
+              {
+                "question": "How far in advance should I book?",
+                "answer": "3–6 months ahead is ideal, but we can often arrange last-minute trips too."
               }
             ]
           },
@@ -1738,6 +2945,7 @@
             "heading": "Gallery",
             "subheading": "A look inside",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1745,12 +2953,30 @@
             "type": "gallery",
             "heading": "",
             "images": [
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto",
-              "auto"
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              },
+              {
+                "src": "auto",
+                "alt": ""
+              }
             ]
           }
         ]
@@ -1764,6 +2990,7 @@
             "heading": "Contact",
             "subheading": "We would love to hear from you",
             "image": "auto",
+            "imageAlt": "",
             "buttonText": "",
             "buttonLink": ""
           },
@@ -1774,6 +3001,11 @@
             "phone": "+1 (555) 010-2999",
             "email": "hello@wanderway.travel",
             "hours": "Mon–Fri 9:00–18:00"
+          },
+          {
+            "type": "map",
+            "heading": "Find us",
+            "address": "123 Main Street, Springfield"
           }
         ]
       }

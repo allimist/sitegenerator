@@ -34,7 +34,8 @@ app.post('/api/sites', h((req) => sites.createSite(req.body || {})));
 app.get('/api/sites/:domain', h((req) => sites.getSite(req.params.domain)));
 app.put('/api/sites/:domain', h((req) => sites.updateSite(req.params.domain, req.body || {})));
 app.delete('/api/sites/:domain', h((req) => (sites.deleteSite(req.params.domain), { ok: true })));
-app.post('/api/sites/:domain/theme/randomize', h((req) => sites.randomizeTheme(req.params.domain)));
+app.post('/api/sites/:domain/theme/randomize', h((req) => sites.randomizeTheme(req.params.domain, req.query.keep)));
+app.get('/api/sites/:domain/themes', h((req) => sites.themeCandidates(req.params.domain, req.query.count, req.query.keep)));
 app.get('/api/sites/:domain/export', h((req, res) => exportSite(req.params.domain, res)));
 app.get('/api/sites/:domain/images', h((req) => sites.listSiteImages(req.params.domain)));
 app.post('/api/sites/:domain/images', h((req) => sites.useImage(req.params.domain, req.body || {})));
@@ -62,14 +63,30 @@ app.post(
   h((req) => {
     if (!req.files || !req.files.length) throw new sites.HttpError(400, 'No valid image files uploaded');
     const category = req.body.category || 'uploads';
-    return req.files.map((f) =>
-      images.saveToBank(category, f.buffer, images.extFromType(f.mimetype, path.extname(f.originalname)), path.parse(f.originalname).name)
+    return Promise.all(
+      req.files.map((f) =>
+        images.saveToBank(category, f.buffer, images.extFromType(f.mimetype, path.extname(f.originalname)), path.parse(f.originalname).name)
+      )
     );
   })
 );
 app.post(
   '/api/images/import',
   h((req) => images.importOnline({ ...req.body, category: req.body.category || 'online' }))
+);
+
+// Page rendered with an unsaved theme (?theme=<json>) for the admin theme gallery.
+app.get(
+  '/preview/:domain',
+  h((req, res) => {
+    let theme;
+    try {
+      theme = JSON.parse(String(req.query.theme || ''));
+    } catch {
+      throw new sites.HttpError(400, 'theme must be JSON');
+    }
+    res.type('html').send(sites.previewPage(req.params.domain, String(req.query.slug || 'home'), theme));
+  })
 );
 
 // ---------- static ----------
@@ -80,9 +97,11 @@ app.get('/', (req, res) => res.redirect('/admin/'));
 
 fs.mkdirSync(sites.SITES_DIR, { recursive: true });
 fs.mkdirSync(images.BANK_DIR, { recursive: true });
-sites.syncAllAssets();
 
-app.listen(PORT, () => {
-  console.log(`Site generator running: http://localhost:${PORT}/admin/`);
-  if (!process.env.UNSPLASH_ACCESS_KEY) console.log('No UNSPLASH_ACCESS_KEY set: online images come from Picsum (no keyword search).');
+// Rebuild existing sites (optimize images, apply template changes) before serving.
+sites.rebuildAll().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Site generator running: http://localhost:${PORT}/admin/`);
+    if (!process.env.UNSPLASH_ACCESS_KEY) console.log('No UNSPLASH_ACCESS_KEY set: online images come from Picsum (no keyword search).');
+  });
 });
