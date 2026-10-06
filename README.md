@@ -17,7 +17,7 @@ No build step and no database: plain Node.js + Express, vanilla HTML/CSS/JS, and
 
 ## Quick start
 
-Requires Node.js 18 or newer.
+Requires Node.js 20.9 or newer (needed by sharp).
 
 ```bash
 git clone https://github.com/allimist/sitegenerator.git
@@ -38,6 +38,14 @@ Open **http://localhost:3000/admin/**. Press **Ctrl+C** to stop.
 | Edit the presets | Change `scripts/build-presets.js`, then run `npm run build-presets`. |
 
 The admin has no login and is meant to run locally only.
+
+### Updating
+
+```bash
+git pull
+npm install   # picks up new dependencies
+npm start     # existing sites are rebuilt (and their images optimized) on startup
+```
 
 ## Using it
 
